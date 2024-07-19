@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page with Comments</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .comments-container {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+        .comment {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .comment-form {
+            margin-top: 10px;
+        }
+        .comment-form textarea {
+            resize: none;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .container-body {
+            min-height: calc(100vh - 56px - 56px); /* Adjust based on header and footer height */
+            padding-bottom: 56px; /* Adjust based on footer height */
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary py-3 text-white text-center">
+        <h1>News Website</h1>
+    </header>
+
+    <main class="container container-body mt-4">
+        <div class="row">
+            <main class="col-md-9 mx-auto">
+                <h1>Article Title</h1>
+                <p><strong>Ngày đăng:</strong> 01/01/2024</p>
+                <p><strong>Số lần xem:</strong> 123</p>
+                <div class="text-center my-4">
+                    <img src="https://via.placeholder.com/800x400" alt="Article Image" class="img-fluid">
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.
+                </div>
+                <hr>
+                <h3>Bình luận</h3>
+                <div class="comments-container">
+                    <!-- Thêm nhiều bình luận để kiểm tra cuộn -->
+                    <div class="comment">
+                        <p><strong>User 1</strong> <span class="text-muted">(01/01/2024 12:00)</span></p>
+                        <p>Comment content here...</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>User 2</strong> <span class="text-muted">(02/01/2024 13:00)</span></p>
+                        <p>Another comment content here...</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>User 3</strong> <span class="text-muted">(03/01/2024 14:00)</span></p>
+                        <p>Another comment content here...</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>User 4</strong> <span class="text-muted">(04/01/2024 15:00)</span></p>
+                        <p>Another comment content here...</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>User 5</strong> <span class="text-muted">(05/01/2024 16:00)</span></p>
+                        <p>Another comment content here...</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>User 6</strong> <span class="text-muted">(06/01/2024 17:00)</span></p>
+                        <p>Another comment content here...</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>User 7</strong> <span class="text-muted">(07/01/2024 18:00)</span></p>
+                        <p>Another comment content here...</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>User 8</strong> <span class="text-muted">(08/01/2024 19:00)</span></p>
+                        <p>Another comment content here...</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>User 9</strong> <span class="text-muted">(09/01/2024 20:00)</span></p>
+                        <p>Another comment content here...</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>User 10</strong> <span class="text-muted">(10/01/2024 21:00)</span></p>
+                        <p>Another comment content here...</p>
+                    </div>
+                    <!-- Thêm nhiều div .comment để kiểm tra cuộn -->
+                </div>
+                <div class="comment-form mt-4">
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" placeholder="Viết bình luận..."></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary">Gửi bình luận</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 News Website</p>
+            <p>Contact Us: info@newswebsite.com | Follow us on <a href="#" class="text-white">Social Media</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

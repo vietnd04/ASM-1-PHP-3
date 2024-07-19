@@ -1,0 +1,24 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+.comments-section {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    flex: 1;
+}
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 0;
+}
+
